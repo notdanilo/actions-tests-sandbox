@@ -2,9 +2,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   release:
@@ -15,5 +12,8 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - run: echo "${{ github.event.label.name }}"
-      - run: echo "${{ toJson(github) }}"
+      - uses: notdanilo/cargo-release-action@main
+        with:
+          major-label: major
+          minor-label: minor
+          patch-label: patch
