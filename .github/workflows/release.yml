@@ -13,4 +13,4 @@ jobs:
         with:
           toolchain: stable
       - run: echo "cargo release patch"
-      - run: echo ${{ github.event.label.patch }}
+      - run: echo ${{ toJson(github) }}
