@@ -12,5 +12,4 @@ jobs:
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - run: echo "cargo release patch"
-      - run: echo "${{ toJson(github) }}"
+      - run: echo "${{ github.event.label.name }}"
