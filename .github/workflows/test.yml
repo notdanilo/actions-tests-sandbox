@@ -1,8 +1,9 @@
 on:
   pull_request:
-    branches:
-      - main
-
+    branches-ignore:
+      - '**'
+#    branches:
+#      - main
 jobs:
   native:
     runs-on: ubuntu-latest
