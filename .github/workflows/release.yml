@@ -6,6 +6,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment: Release
     name: Release
     steps:
       - uses: actions/checkout@v2
@@ -17,3 +18,5 @@ jobs:
           major-label: major
           minor-label: minor
           patch-label: patch
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          cargo-token: ${{ secrets.CARGO_TOKEN }}
