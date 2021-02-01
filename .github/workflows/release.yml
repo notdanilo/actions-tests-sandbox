@@ -19,4 +19,5 @@ jobs:
           patch-label: patch
           cargo-token: ${{ secrets.CARGO_TOKEN }}
           github-user-name: notdanilo
+          github-user-email: danguafer@gmail.com
           github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
