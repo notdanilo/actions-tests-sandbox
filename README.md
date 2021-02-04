@@ -1,2 +1,2 @@
-# cross-test-action-test
-What the name says
+# actions-tests-sandbox
+Repository used for testing GitHub Actions.
